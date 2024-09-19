@@ -13,9 +13,13 @@ export default function About() {
 				/>
 			</Head>
 			<main className="container mx-auto px-4 py-16">
-				<h1 className="text-3xl font-bold text-blue-600">About Us</h1>
+				<h1 className="text-3xl font-bold text-blue-600 text-center">
+					About Us
+				</h1>
 				<section className="mt-8">
-					<h2 className="text-2xl font-semibold text-blue-500">Our Mission</h2>
+					<h2 className="text-2xl font-semibold text-blue-500 text-center">
+						Our Mission
+					</h2>
 					<p className="mt-4">
 						Health Software Solution was born from the experience of a senior
 						developer with 15 years of expertise and a passionate junior
@@ -26,7 +30,9 @@ export default function About() {
 				</section>
 
 				<section className="mt-8">
-					<h2 className="text-2xl font-semibold text-blue-500">Our Vision</h2>
+					<h2 className="text-2xl font-semibold text-blue-500 text-center">
+						Our Vision
+					</h2>
 					<p className="mt-4">
 						We envision a future where technology bridges gaps in healthcare,
 						improves patient outcomes, and streamlines administrative processes.
@@ -36,7 +42,9 @@ export default function About() {
 				</section>
 
 				<section className="mt-8">
-					<h2 className="text-2xl font-semibold text-blue-500">Our Team</h2>
+					<h2 className="text-2xl font-semibold text-blue-500 text-center">
+						Our Team
+					</h2>
 					<div className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 						<div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
 							<div className="w-52 h-52 relative overflow-hidden rounded-full border-4 border-blue-500 flex items-center justify-center">
@@ -100,7 +108,9 @@ export default function About() {
 					</div>
 				</section>
 				<section className="mt-8">
-					<h2 className="text-2xl font-semibold text-blue-500">Our Values</h2>
+					<h2 className="text-2xl font-semibold text-blue-500 text-center">
+						Our Values
+					</h2>
 					<p className="mt-4 text-lg">
 						At Health Software Solution, our core values guide everything we do.
 						These principles drive our mission to innovate, deliver exceptional

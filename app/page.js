@@ -1,46 +1,18 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-//import HeroSection from "../components/HeroSection"; // Assicurati che HeroSection esista e sia importato correttamente
+import HeroSection from "./components/HeroSection";
+import WorkPage from "./services/page";
 
 export default function Home() {
 	return (
-		<div>
+		<div className="bg-gray-50">
 			<Head>
 				<title>Health Company</title>
 			</Head>
 			<main>
-				<div className="relative h-screen">
-					<Image
-						src="/hero.jpg"
-						alt="Hero Image"
-						layout="fill"
-						objectFit="cover"
-						className="absolute inset-0 z-0"
-					/>
-					<div className="absolute inset-0 bg-black opacity-30 z-10"></div>
-					<div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
-						<h1 className="text-4xl font-bold mb-4 text-gray-200">
-							Welcome to Our Website
-						</h1>
-						<p className="text-lg">We provide the best services for you.</p>
-						<div className="mt-10 flex justify-center space-x-4">
-							{/* "Our Work" Button */}
-							<Link href="/services">
-								<p className=" bg-blue-500 text-white font-semibold py-3 px-6 rounded-lg hover:bg-opacity-90 transition">
-									Our Services
-								</p>
-							</Link>
-
-							{/* "About Us" Button */}
-							<Link href="/about">
-								<p className="border border-blue-500 text-blue-500 font-semibold py-3 px-6 rounded-lg hover:bg-primary hover:text-white transition">
-									About Us
-								</p>
-							</Link>
-						</div>
-					</div>
-				</div>
+				<HeroSection />
+				<WorkPage />
 
 				<section id="second" className="py-16">
 					<div className="container mx-auto flex flex-col-reverse lg:flex-row p-6">

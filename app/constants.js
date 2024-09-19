@@ -21,32 +21,32 @@ export const faqs = [
 	},
 ];
 
-export const caseStudies = [
-	{
-		id: 1,
-		title: "Project A",
-		description:
-			"An overview of Project A showcasing our expertise in React and Laravel.",
-		image: "/pexels.jpg",
-		link: "/project-a",
-	},
-	{
-		id: 2,
-		title: "Project B",
-		description:
-			"An in-depth look at Project B, highlighting our custom software solutions.",
-		image: "/pexels.jpg",
-		link: "/project-b",
-	},
-	{
-		id: 3,
-		title: "Project C",
-		description:
-			"A case study on Project C, illustrating our innovative approach to development.",
-		image: "/pexels.jpg",
-		link: "/project-c",
-	},
-	// Add more projects as needed
-];
+// export const caseStudies = [
+// 	{
+// 		id: 1,
+// 		title: "Services 1",
+// 		description:
+// 			"An overview of Project A showcasing our expertise in React and Laravel.",
+// 		image: "/pexels.jpg",
+// 		link: "/project-a",
+// 	},
+// 	{
+// 		id: 2,
+// 		title: "Services 2",
+// 		description:
+// 			"An in-depth look at Project B, highlighting our custom software solutions.",
+// 		image: "/pexels.jpg",
+// 		link: "/project-b",
+// 	},
+// 	{
+// 		id: 3,
+// 		title: "Services 2",
+// 		description:
+// 			"A case study on Project C, illustrating our innovative approach to development.",
+// 		image: "/pexels.jpg",
+// 		link: "/project-c",
+// 	},
+// 	// Add more projects as needed
+// ];
 
 export const BASE_API_URL = process.env.NEXT_PUBLIC_BASE_API_URL;

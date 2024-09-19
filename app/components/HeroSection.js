@@ -2,22 +2,23 @@ import Image from "next/image";
 import Link from "next/link";
 
 // components/HeroSection.jsx
+
 export default function HeroSection() {
 	return (
-		<section className="bg-transparent py-16">
-			<div className="container mx-auto text-center">
-				{/* Heading */}
-				<h1 className="text-4xl lg:text-5xl font-bold text-black">
-					Your Health Company
+		<div className="relative h-screen">
+			<Image
+				src="/hero.jpg"
+				alt="Hero Image"
+				layout="fill"
+				objectFit="cover"
+				className="absolute inset-0 z-0"
+			/>
+			<div className="absolute inset-0 bg-black opacity-30 z-10"></div>
+			<div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
+				<h1 className="text-4xl font-bold mb-4 text-gray-200">
+					Welcome to Our Website
 				</h1>
-
-				{/* Subheading */}
-				<p className="mt-6 text-lg lg:text-xl text-gray-800">
-					Caring for your health needs through Physiotherapy, Nutrition, and
-					Yoga Therapy
-				</p>
-
-				{/* Buttons */}
+				<p className="text-lg">We provide the best services for you.</p>
 				<div className="mt-10 flex justify-center space-x-4">
 					{/* "Our Work" Button */}
 					<Link href="/services">
@@ -28,12 +29,12 @@ export default function HeroSection() {
 
 					{/* "About Us" Button */}
 					<Link href="/about">
-						<p className="border border-blue-500 text-blue-500 font-semibold py-3 px-6 rounded-lg hover:bg-primary hover:text-white transition">
+						<p className=" bg-blue-500 text-white font-semibold py-3 px-6 rounded-lg hover:bg-opacity-90 transition">
 							About Us
 						</p>
 					</Link>
 				</div>
 			</div>
-		</section>
+		</div>
 	);
 }

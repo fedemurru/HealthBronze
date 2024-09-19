@@ -58,7 +58,7 @@ export default function Header() {
 					</svg>
 				</button>
 				<ul
-					className={`md:flex md:space-x-4 md:items-center absolute md:static bg-blue-500  w-full md:w-auto transition-transform duration-300 ease-in-out ${
+					className={`md:flex md:space-x-4 md:items-center z-50 absolute md:static bg-blue-500  w-full md:w-auto transition-transform duration-300 ease-in-out ${
 						isMenuOpen ? "top-16" : "top-[-500px]"
 					} right-0 md:right-auto`}
 				>

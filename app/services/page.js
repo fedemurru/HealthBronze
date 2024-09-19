@@ -8,7 +8,9 @@ const apiUrl = BASE_API_URL;
 
 async function getData() {
 	try {
-		const response = await fetch(`${apiUrl}/api/case`);
+		const response = await fetch(`${apiUrl}/api/case`, {
+			cache: "no-cache",
+		});
 		const data = await response.json();
 		return data;
 		//console.log(caseStudies);
@@ -18,16 +20,16 @@ async function getData() {
 	}
 }
 
-async function workPage() {
+async function WorkPage() {
 	const caseStudies = await getData();
 	if (!apiUrl) {
 		return null;
 	}
 	return (
-		<div className="bg-gray-50 min-h-screen p-6">
+		<div className="bg-gray-50 mt-10 p-6">
 			<header className="bg-primary text-white py-6 mb-12">
 				<div className="container mx-auto text-center">
-					<h1 className="text-4xl font-bold">Our Work</h1>
+					<h1 className="text-4xl font-bold">Our Services</h1>
 					<p className="text-lg mt-2">
 						Explore some of the projects we have successfully delivered.
 					</p>
@@ -71,4 +73,4 @@ async function workPage() {
 	);
 }
 
-export default workPage;
+export default WorkPage;
