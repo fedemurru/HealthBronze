@@ -8,14 +8,13 @@ export default function HeroSection() {
 			<div className="container mx-auto text-center">
 				{/* Heading */}
 				<h1 className="text-4xl lg:text-5xl font-bold text-black">
-					Welcome to Health Software Solution
+					Your Health Company
 				</h1>
 
 				{/* Subheading */}
 				<p className="mt-6 text-lg lg:text-xl text-gray-800">
-					We offers innovative software solutions for Physiotherapists,
-					Chiropractors, Osteopaths, Podiatrists and other Healthcare
-					Professionals.
+					Caring for your health needs through Physiotherapy, Nutrition, and
+					Yoga Therapy
 				</p>
 
 				{/* Buttons */}

@@ -24,7 +24,7 @@ export default function Header() {
 					<div className="flex items-center">
 						<Image src="/logo.webp" width={70} height={100} alt="Logo" />
 						<div className="text-lg font-bold cursor-pointer ml-2">
-							Health Software Solution
+							Your Health Company
 						</div>
 					</div>
 				</Link>
