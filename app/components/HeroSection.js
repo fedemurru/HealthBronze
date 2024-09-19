@@ -9,8 +9,8 @@ export default function HeroSection() {
 			<Image
 				src="/hero.jpg"
 				alt="Hero Image"
-				layout="fill"
-				objectFit="cover"
+				fill
+				style={{ objectFit: "cover" }}
 				className="absolute inset-0 z-0"
 			/>
 			<div className="absolute inset-0 bg-black opacity-30 z-10"></div>

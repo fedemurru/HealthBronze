@@ -33,8 +33,8 @@ export default function Contact() {
 		try {
 			// Invio dell'email usando EmailJS
 			await emailjs.send(
-				"service_lg30a2k",
-				"template_dbo6zu5",
+				process.env.EMAILJS_SERVICE_ID, // Service ID from .env
+				process.env.EMAILJS_TEMPLATE_ID, // Template ID from .env
 				{
 					from_name: form.name,
 					to_name: "Federico",
@@ -42,11 +42,14 @@ export default function Contact() {
 					to_email: "federico.murru87@gmail.com",
 					message: form.message,
 				},
-				"JhIRu4QPz1791v4B1"
+				process.env.EMAILJS_PUBLIC_KEY // Public Key from .env
 			);
-
 			//service_lg30a2k
 			// template_908by6p
+
+			console.log("Service ID:", process.env.EMAILJS_SERVICE_ID);
+			console.log("Template ID:", process.env.EMAILJS_TEMPLATE_ID);
+			console.log("Public Key:", process.env.EMAILJS_PUBLIC_KEY);
 
 			// Se l'invio ha successo
 			setLoading(false);
