@@ -58,7 +58,7 @@ export default function Header() {
 					</svg>
 				</button>
 				<ul
-					className={`md:flex md:space-x-4 md:items-center absolute md:static bg-transparent  w-full md:w-auto transition-transform duration-300 ease-in-out ${
+					className={`md:flex md:space-x-4 md:items-center absolute md:static bg-blue-500  w-full md:w-auto transition-transform duration-300 ease-in-out ${
 						isMenuOpen ? "top-16" : "top-[-500px]"
 					} right-0 md:right-auto`}
 				>
@@ -92,22 +92,13 @@ export default function Header() {
 							</p>
 						</Link>
 					</li>
-					<li>
-						<Link href="/contact" passHref>
-							<p
-								className="block p-2 md:p-0 hover:text-blue-300 transition-colors duration-300"
-								onClick={handleLinkClick}
-							>
-								Contact
-							</p>
-						</Link>
-					</li>
+
 					{/* Call to Action - Get Started */}
 					<li>
 						<Link href="/contact">
 							<p
 								onClick={handleLinkClick}
-								className="bg-blue-600 hidden md:block text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-00 transition-colors duration-300"
+								className="md:bg-blue-600 bg-blue-500   md:block text-white px-2 md:px-4 py-2 rounded-lg shadow-md hover:bg-blue-00 transition-colors duration-300"
 							>
 								Get Started
 							</p>

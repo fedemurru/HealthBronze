@@ -1,32 +1,74 @@
 import Head from "next/head";
+import Image from "next/image";
+import React from "react";
+import Link from "next/link";
+import { BASE_API_URL } from "../constants";
 
-export default function Services() {
+const apiUrl = BASE_API_URL;
+
+async function getData() {
+	try {
+		const response = await fetch(`${apiUrl}/api/case`);
+		const data = await response.json();
+		return data;
+		//console.log(caseStudies);
+	} catch (error) {
+		console.log(error, "error while fetching data");
+		return [];
+	}
+}
+
+async function workPage() {
+	const caseStudies = await getData();
+	if (!apiUrl) {
+		return null;
+	}
 	return (
-		<div>
-			<Head>
-				<title>Services - Health Software Solution</title>
-			</Head>
-			<main className="container mx-auto px-4 py-16">
-				<h1 className="text-3xl font-bold text-blue-600">Our Services</h1>
-				<ul className="mt-8 space-y-4">
-					<li className="bg-gray-100 p-4 rounded-lg shadow">
-						<h2 className="text-xl font-semibold">
-							Patient Management Solutions
-						</h2>
-						<p>
-							Custom software designed to improve efficiency in managing
-							patients and medical records.
-						</p>
-					</li>
-					<li className="bg-gray-100 p-4 rounded-lg shadow">
-						<h2 className="text-xl font-semibold">Telemedicine</h2>
-						<p>
-							Innovative tools for remote consultation, simplifying
-							communication between doctors and patients.
-						</p>
-					</li>
-				</ul>
+		<div className="bg-gray-50 min-h-screen p-6">
+			<header className="bg-primary text-white py-6 mb-12">
+				<div className="container mx-auto text-center">
+					<h1 className="text-4xl font-bold">Our Work</h1>
+					<p className="text-lg mt-2">
+						Explore some of the projects we have successfully delivered.
+					</p>
+				</div>
+			</header>
+
+			<main className="container mx-auto">
+				{/* Case Studies Section */}
+
+				<section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+					{caseStudies.map((caseStudy, index) => (
+						<div
+							key={index}
+							className="bg-white rounded-lg shadow-md overflow-hidden"
+						>
+							<div className="relative w-full h-60">
+								<Image
+									src={caseStudy.image}
+									alt={caseStudy.title}
+									layout="fill"
+									objectFit="cover"
+									className="w-full h-full"
+								/>
+							</div>
+							<div className="p-6">
+								<h2 className="text-2xl font-semibold mb-4">
+									{caseStudy.title}
+								</h2>
+								<p className="text-gray-700 mb-4">{caseStudy.description}</p>
+								<Link href={`/services/${caseStudy.id}`}>
+									<p className="text-primary font-semibold hover:underline">
+										Read More
+									</p>
+								</Link>
+							</div>
+						</div>
+					))}
+				</section>
 			</main>
 		</div>
 	);
 }
+
+export default workPage;

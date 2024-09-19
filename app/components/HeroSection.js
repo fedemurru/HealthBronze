@@ -21,9 +21,9 @@ export default function HeroSection() {
 				{/* Buttons */}
 				<div className="mt-10 flex justify-center space-x-4">
 					{/* "Our Work" Button */}
-					<Link href="/work">
+					<Link href="/services">
 						<p className=" bg-blue-500 text-white font-semibold py-3 px-6 rounded-lg hover:bg-opacity-90 transition">
-							Our Work
+							Our Services
 						</p>
 					</Link>
 
