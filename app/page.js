@@ -67,7 +67,7 @@ export default function Home() {
 
 						{/* Content */}
 						<div className="flex flex-col space-y-10 lg:mt-16 lg:w-1/2 lg:justify-center lg:items-start ml-5">
-							<h1 className="text-3xl font-semibold text-center lg:text-6xl lg:text-left">
+							<h1 className="text-3xl font-semibold text-center lg:text-6xl lg:text-left ">
 								How We Do It
 							</h1>
 							<p className="text-lg text-center lg:text-2xl lg:text-left text-gray-600">

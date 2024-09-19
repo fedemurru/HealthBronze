@@ -7,6 +7,9 @@ module.exports = {
 	],
 	theme: {
 		extend: {
+			fontFamily: {
+				generalsans: ['"General Sans"', "sans-serif"],
+			},
 			colors: {
 				primary: "#4299e1", // Cyan color
 				white: "#ffffff", // White
