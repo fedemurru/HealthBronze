@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import HeroSection from "./components/HeroSection";
 import WorkPage from "./services/page";
+import MiddleSection from "./components/MiddleSection";
 
 export default function Home() {
 	return (
@@ -13,6 +14,7 @@ export default function Home() {
 			<main>
 				<HeroSection />
 				<WorkPage />
+				<MiddleSection />
 
 				<section id="second" className="py-16">
 					<div className="container mx-auto flex flex-col-reverse lg:flex-row p-6">
