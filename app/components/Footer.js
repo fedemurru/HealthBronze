@@ -1,5 +1,5 @@
 // components/Footer.jsx
-import Link from "next/link";
+
 import SocialFooter from "./SocialFooter";
 
 export default function Footer() {
