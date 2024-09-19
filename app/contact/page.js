@@ -33,8 +33,8 @@ export default function Contact() {
 		try {
 			// Invio dell'email usando EmailJS
 			await emailjs.send(
-				process.env.EMAILJS_SERVICE_ID,
-				process.env.EMAILJS_TEMPLATE_ID,
+				"service_lg30a2k",
+				"template_dbo6zu5",
 				{
 					from_name: form.name,
 					to_name: "Federico",
@@ -42,8 +42,11 @@ export default function Contact() {
 					to_email: "federico.murru87@gmail.com",
 					message: form.message,
 				},
-				process.env.EMAILJS_PUBLIC_KEY
+				"JhIRu4QPz1791v4B1"
 			);
+
+			//service_lg30a2k
+			// template_908by6p
 
 			// Se l'invio ha successo
 			setLoading(false);
@@ -74,8 +77,6 @@ export default function Contact() {
 		}
 	};
 
-	//service_lg30a2k
-	// template_908by6p
 	return (
 		<section className="container mx-auto py-16">
 			<h1 className="text-3xl font-bold text-center text-primary mb-8">
