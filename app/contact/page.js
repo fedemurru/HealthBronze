@@ -2,7 +2,8 @@
 
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
-import useAlert from "../hooks/useAlert";
+import useAlert from "../hooks/useAlert.js";
+import Alert from "../components/Alert.js";
 
 export default function Contact() {
 	const formRef = useRef();
@@ -33,8 +34,8 @@ export default function Contact() {
 		try {
 			// Invio dell'email usando EmailJS
 			await emailjs.send(
-				process.env.EMAILJS_SERVICE_ID, // Service ID from .env
-				process.env.EMAILJS_TEMPLATE_ID, // Template ID from .env
+				process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID, // Service ID from .env
+				process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID, // Template ID from .env
 				{
 					from_name: form.name,
 					to_name: "Federico",
@@ -42,14 +43,10 @@ export default function Contact() {
 					to_email: "federico.murru87@gmail.com",
 					message: form.message,
 				},
-				process.env.EMAILJS_PUBLIC_KEY // Public Key from .env
+				process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY // Public Key from .env
 			);
 			//service_lg30a2k
 			// template_908by6p
-
-			console.log("Service ID:", process.env.EMAILJS_SERVICE_ID);
-			console.log("Template ID:", process.env.EMAILJS_TEMPLATE_ID);
-			console.log("Public Key:", process.env.EMAILJS_PUBLIC_KEY);
 
 			// Se l'invio ha successo
 			setLoading(false);
@@ -82,6 +79,7 @@ export default function Contact() {
 
 	return (
 		<section className="container mx-auto py-16">
+			{alert.show && <Alert {...alert} />}
 			<h1 className="text-3xl font-bold text-center text-primary mb-8">
 				Contact Us
 			</h1>
