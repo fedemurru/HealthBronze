@@ -9,7 +9,7 @@ const apiUrl = BASE_API_URL;
 async function getProjectData(id) {
 	try {
 		const response = await fetch(`${apiUrl}/api/case/${id}`, {
-			cache: "no-cache",
+			cache: "no-store",
 		});
 		if (!response.ok) throw new Error("Network response was not ok");
 		const data = await response.json();

@@ -14,7 +14,7 @@ export const caseStudies = [
 		title: "Orthopedic Services",
 		description:
 			"Specialized orthopedic care for musculoskeletal issues, including injury treatment, surgery, and rehabilitation.",
-		image: "/service3.jpg",
+		image: "/service4.jpg",
 		link: "/project-c",
 	},
 	{
