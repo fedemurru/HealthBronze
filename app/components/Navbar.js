@@ -100,7 +100,7 @@ export default function Header() {
 								onClick={handleLinkClick}
 								className="md:bg-blue-600 bg-blue-500   md:block text-white px-2 md:px-4 py-2 rounded-lg shadow-md hover:bg-blue-00 transition-colors duration-300"
 							>
-								Get Started
+								Book Now
 							</p>
 						</Link>
 					</li>
