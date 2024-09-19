@@ -22,8 +22,8 @@ export default function Header() {
 			<nav className="container mx-auto flex items-center justify-between relative  bg-blue-500 bg-opacity-50">
 				<Link href="/" passHref>
 					<div className="flex items-center">
-						<Image src="/logo.webp" width={70} height={100} alt="Logo" />
-						<div className="text-lg font-bold cursor-pointer ml-2">
+						<Image src="/logo1.svg" width={95} height={100} alt="Logo" />
+						<div className="text-xl font-bold cursor-pointer ml-4">
 							Your Health Company
 						</div>
 					</div>
