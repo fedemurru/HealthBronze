@@ -50,7 +50,7 @@ async function WorkPage() {
 									src={caseStudy.image}
 									alt={caseStudy.title}
 									layout="fill"
-									objectFit="cover"
+									style={{ objectFit: "cover" }}
 									className="w-full h-full"
 								/>
 							</div>
