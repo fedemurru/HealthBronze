@@ -4,7 +4,7 @@ import Link from "next/link";
 // components/HeroSection.jsx
 export default function HeroSection() {
 	return (
-		<section className="bg-white py-16">
+		<section className="bg-transparent py-16">
 			<div className="container mx-auto text-center">
 				{/* Heading */}
 				<h1 className="text-4xl lg:text-5xl font-bold text-black">
@@ -12,7 +12,7 @@ export default function HeroSection() {
 				</h1>
 
 				{/* Subheading */}
-				<p className="mt-6 text-lg lg:text-xl text-gray-600">
+				<p className="mt-6 text-lg lg:text-xl text-gray-800">
 					We offers innovative software solutions for Physiotherapists,
 					Chiropractors, Osteopaths, Podiatrists and other Healthcare
 					Professionals.

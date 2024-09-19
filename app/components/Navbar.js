@@ -18,8 +18,8 @@ export default function Header() {
 	};
 
 	return (
-		<header className=" bg-blue-500 text-white">
-			<nav className="container mx-auto flex items-center justify-between relative">
+		<header className=" text-white">
+			<nav className="container mx-auto flex items-center justify-between relative  bg-blue-500 bg-opacity-50">
 				<Link href="/" passHref>
 					<div className="flex items-center">
 						<Image src="/logo.webp" width={70} height={100} alt="Logo" />
@@ -58,7 +58,7 @@ export default function Header() {
 					</svg>
 				</button>
 				<ul
-					className={`md:flex md:space-x-4 md:items-center absolute md:static  bg-blue-500 w-full md:w-auto transition-transform duration-300 ease-in-out ${
+					className={`md:flex md:space-x-4 md:items-center absolute md:static bg-transparent  w-full md:w-auto transition-transform duration-300 ease-in-out ${
 						isMenuOpen ? "top-16" : "top-[-500px]"
 					} right-0 md:right-auto`}
 				>
@@ -107,7 +107,7 @@ export default function Header() {
 						<Link href="/contact">
 							<p
 								onClick={handleLinkClick}
-								className="bg-blue-600 hidden md:block text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-800 transition-colors duration-300"
+								className="bg-blue-600 hidden md:block text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-00 transition-colors duration-300"
 							>
 								Get Started
 							</p>

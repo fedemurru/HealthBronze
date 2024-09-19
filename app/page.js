@@ -9,8 +9,10 @@ export default function Home() {
 			<Head>
 				<title>Health Software Solution</title>
 			</Head>
-			<main className="container mx-auto px-4 py-16 text-center">
-				<HeroSection />
+			<main className="container mx-auto px-4 py-16 text-center  ">
+				<div>
+					<HeroSection />
+				</div>
 				<section id="hero">
 					<div className="container flex flex-col-reverse mx-auto p-6 lg:flex-row lg:mb-0">
 						{/* Content */}
@@ -46,6 +48,7 @@ export default function Home() {
 						</div>
 					</div>
 				</section>
+
 				<section id="hero">
 					<div className="container flex flex-col lg:flex-row mx-auto p-6 lg:mb-0 mr-3">
 						{/* Image */}
