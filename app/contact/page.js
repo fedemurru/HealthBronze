@@ -1,3 +1,5 @@
+"use client";
+
 export default function Contact() {
 	return (
 		<section className="container mx-auto py-16">
