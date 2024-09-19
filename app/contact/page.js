@@ -4,7 +4,7 @@ export default function Contact() {
 			<h1 className="text-3xl font-bold text-center text-primary mb-8">
 				Contact Us
 			</h1>
-			<form className="max-w-lg mx-auto bg-gray-100 p-8 rounded-lg shadow">
+			<form className="max-w-lg mx-auto bg-gray-200 p-8 rounded-lg shadow">
 				<div className="mb-4">
 					<label className="block text-gray-700">Name</label>
 					<input type="text" className="w-full px-4 py-2 border rounded-lg" />
