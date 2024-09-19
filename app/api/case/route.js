@@ -7,7 +7,7 @@ export const caseStudies = [
 		description:
 			"Comprehensive care for children, including routine check-ups, vaccinations, and treatment of common childhood illnesses.",
 		image: "/service2.jpg",
-		link: "/project-b",
+		link: "/project-a",
 	},
 	{
 		id: 2,
@@ -15,7 +15,7 @@ export const caseStudies = [
 		description:
 			"Specialized orthopedic care for musculoskeletal issues, including injury treatment, surgery, and rehabilitation.",
 		image: "/service4.jpg",
-		link: "/project-c",
+		link: "/project-b",
 	},
 	{
 		id: 3,
