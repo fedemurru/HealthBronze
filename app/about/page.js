@@ -40,7 +40,7 @@ export default function About() {
 					<div className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 						<div className="bg-white p-6 rounded shadow-lg">
 							<Image
-								src="/images/john-doe.jpg"
+								src="/example2.jpg"
 								width={300}
 								height={300}
 								alt="John Doe"
@@ -58,9 +58,9 @@ export default function About() {
 						</div>
 						<div className="bg-white p-6 rounded shadow-lg">
 							<Image
-								src="/images/jane-smith.jpg"
-								width={300}
-								height={300}
+								src="/example1.jpg"
+								width={200}
+								height={200}
 								alt="Jane Smith"
 								className="w-full h-40 object-cover rounded-t"
 							/>
