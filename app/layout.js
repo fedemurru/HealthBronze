@@ -24,11 +24,11 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<body>
-				<div>
+				<div className="flex flex-col min-h-screen">
 					<header className="bg-primary p-4 text-white">
 						<Navbar />
 					</header>
-					<main>{children}</main>
+					<main className="flex-grow">{children}</main>
 					<Footer />
 				</div>
 			</body>
