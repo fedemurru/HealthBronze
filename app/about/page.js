@@ -14,6 +14,26 @@ export default function About() {
 			</Head>
 			<main className="container mx-auto px-4 py-16">
 				<h1 className="text-3xl font-bold text-blue-600">About Us</h1>
+				<section className="mt-8">
+					<h2 className="text-2xl font-semibold text-blue-500">Our Mission</h2>
+					<p className="mt-4">
+						Health Software Solution was born from the experience of a senior
+						developer with 15 years of expertise and a passionate junior
+						developer. Our mission is to revolutionize the healthcare industry
+						through cutting-edge technology, making healthcare more efficient
+						and accessible.
+					</p>
+				</section>
+
+				<section className="mt-8">
+					<h2 className="text-2xl font-semibold text-blue-500">Our Vision</h2>
+					<p className="mt-4">
+						We envision a future where technology bridges gaps in healthcare,
+						improves patient outcomes, and streamlines administrative processes.
+						Our goal is to be at the forefront of this transformation by
+						delivering innovative and reliable software solutions.
+					</p>
+				</section>
 
 				<section className="mt-8">
 					<h2 className="text-2xl font-semibold text-blue-500">Our Team</h2>
