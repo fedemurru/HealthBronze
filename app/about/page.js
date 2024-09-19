@@ -38,43 +38,63 @@ export default function About() {
 				<section className="mt-8">
 					<h2 className="text-2xl font-semibold text-blue-500">Our Team</h2>
 					<div className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-						<div className="bg-white p-6 rounded shadow-lg">
-							<Image
-								src="/example2.jpg"
-								width={300}
-								height={300}
-								alt="John Doe"
-								className="w-full h-40 object-cover rounded-t"
-							/>
+						<div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
+							<div className="w-60 h-60 relative overflow-hidden rounded-full border-4 border-blue-500">
+								<Image
+									src="/example2.jpg"
+									layout="fill"
+									objectFit="cover"
+									alt="John Doe"
+								/>
+							</div>
 							<h3 className="text-xl font-semibold text-blue-600 mt-4">
 								Dr. John Doe
 							</h3>
 							<p className="mt-2">Senior Healthcare Specialist</p>
-							<p className="mt-2">
+							<p className="mt-2 text-center">
 								With 15 years of experience in healthcare, Dr. Doe brings a
 								wealth of medical knowledge and insights into the technology
 								that drives our solutions.
 							</p>
 						</div>
-						<div className="bg-white p-6 rounded shadow-lg">
-							<Image
-								src="/example1.jpg"
-								width={200}
-								height={200}
-								alt="Jane Smith"
-								className="w-full h-40 object-cover rounded-t"
-							/>
+						<div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
+							<div className="w-60 h-60 relative overflow-hidden rounded-full border-4 border-blue-500">
+								<Image
+									src="/example1.jpg"
+									layout="fill"
+									objectFit="cover"
+									alt="Jane Smith"
+								/>
+							</div>
 							<h3 className="text-xl font-semibold text-blue-600 mt-4">
 								Dr. Jane Smith
 							</h3>
 							<p className="mt-2">Healthcare Technology Consultant</p>
-							<p className="mt-2">
+							<p className="mt-2 text-center">
 								Dr. Smith specializes in integrating healthcare technology to
 								improve patient care and streamline processes within healthcare
 								facilities.
 							</p>
 						</div>
-						{/* Aggiungi altri membri del team qui */}
+						<div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
+							<div className="w-60 h-60 relative overflow-hidden rounded-full border-4 border-blue-500">
+								<Image
+									src="/example3.jpg"
+									layout="fill"
+									objectFit="cover"
+									alt="Alex Johnson"
+								/>
+							</div>
+							<h3 className="text-xl font-semibold text-blue-600 mt-4">
+								Dr. Alex Johnson
+							</h3>
+							<p className="mt-2">Medical Data Analyst</p>
+							<p className="mt-2 text-center">
+								Dr. Johnson specializes in analyzing medical data to improve
+								patient outcomes and optimize healthcare operations through
+								advanced analytics and technology.
+							</p>
+						</div>
 					</div>
 				</section>
 
