@@ -65,7 +65,7 @@ export default function Header() {
 					<li>
 						<Link href="/" passHref>
 							<p
-								className="block p-2 md:p-0 hover:text-blue-500 transition-colors duration-300"
+								className="block p-2 md:p-0 hover:text-blue-300 transition-colors duration-300"
 								onClick={handleLinkClick}
 							>
 								Home
@@ -75,7 +75,7 @@ export default function Header() {
 					<li>
 						<Link href="/about" passHref>
 							<p
-								className="block p-2 md:p-0 hover:text-blue-500 transition-colors duration-300"
+								className="block p-2 md:p-0 hover:text-blue-300 transition-colors duration-300"
 								onClick={handleLinkClick}
 							>
 								About Us
@@ -85,7 +85,7 @@ export default function Header() {
 					<li>
 						<Link href="/services" passHref>
 							<p
-								className="block p-2 md:p-0 hover:text-blue-500 transition-colors duration-300"
+								className="block p-2 md:p-0 hover:text-blue-300 transition-colors duration-300"
 								onClick={handleLinkClick}
 							>
 								Services
@@ -95,7 +95,7 @@ export default function Header() {
 					<li>
 						<Link href="/contact" passHref>
 							<p
-								className="block p-2 md:p-0 hover:text-blue-500 transition-colors duration-300"
+								className="block p-2 md:p-0 hover:text-blue-300 transition-colors duration-300"
 								onClick={handleLinkClick}
 							>
 								Contact
@@ -107,7 +107,7 @@ export default function Header() {
 						<Link href="/contact">
 							<p
 								onClick={handleLinkClick}
-								className="bg-blue-500 hidden md:block text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300"
+								className="bg-blue-600 hidden md:block text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-800 transition-colors duration-300"
 							>
 								Get Started
 							</p>
