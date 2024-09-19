@@ -15,35 +15,15 @@ export default function About() {
 				<h1 className="text-3xl font-bold text-blue-600">About Us</h1>
 
 				<section className="mt-8">
-					<h2 className="text-2xl font-semibold text-blue-500">Our Mission</h2>
-					<p className="mt-4">
-						Health Software Solution was born from the experience of a senior
-						developer with 15 years of expertise and a passionate junior
-						developer. Our mission is to revolutionize the healthcare industry
-						through cutting-edge technology, making healthcare more efficient
-						and accessible.
-					</p>
-				</section>
-
-				<section className="mt-8">
-					<h2 className="text-2xl font-semibold text-blue-500">Our Vision</h2>
-					<p className="mt-4">
-						We envision a future where technology bridges gaps in healthcare,
-						improves patient outcomes, and streamlines administrative processes.
-						Our goal is to be at the forefront of this transformation by
-						delivering innovative and reliable software solutions.
-					</p>
-				</section>
-
-				<section className="mt-8">
 					<h2 className="text-2xl font-semibold text-blue-500">Our Team</h2>
 					<div className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 						<div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
-							<div className="w-60 h-60 relative overflow-hidden rounded-full border-4 border-blue-500">
+							<div className="w-52 h-52 relative overflow-hidden rounded-full border-4 border-blue-500 flex items-center justify-center">
 								<Image
 									src="/example2.jpg"
 									layout="fill"
 									objectFit="cover"
+									objectPosition="top"
 									alt="John Doe"
 								/>
 							</div>
@@ -58,12 +38,13 @@ export default function About() {
 							</p>
 						</div>
 						<div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
-							<div className="w-60 h-60 relative overflow-hidden rounded-full border-4 border-blue-500">
+							<div className="w-52 h-52 relative overflow-hidden rounded-full border-4 border-blue-500 flex items-center justify-center">
 								<Image
 									src="/example1.jpg"
 									layout="fill"
 									objectFit="cover"
-									alt="Jane Smith"
+									alt="John Doe"
+									className="transform scale-40"
 								/>
 							</div>
 							<h3 className="text-xl font-semibold text-blue-600 mt-4">
@@ -77,7 +58,7 @@ export default function About() {
 							</p>
 						</div>
 						<div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
-							<div className="w-60 h-60 relative overflow-hidden rounded-full border-4 border-blue-500">
+							<div className="w-52 h-52 relative overflow-hidden rounded-full border-4 border-blue-500 flex items-center justify-center">
 								<Image
 									src="/example3.jpg"
 									layout="fill"
