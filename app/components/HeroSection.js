@@ -22,14 +22,14 @@ export default function HeroSection() {
 				<div className="mt-10 flex justify-center space-x-4">
 					{/* "Our Work" Button */}
 					<Link href="/work">
-						<p className="bg-primary text-white font-semibold py-3 px-6 rounded-lg hover:bg-opacity-90 transition">
+						<p className=" bg-blue-500 text-white font-semibold py-3 px-6 rounded-lg hover:bg-opacity-90 transition">
 							Our Work
 						</p>
 					</Link>
 
 					{/* "About Us" Button */}
 					<Link href="/about">
-						<p className="border border-primary text-primary font-semibold py-3 px-6 rounded-lg hover:bg-primary hover:text-white transition">
+						<p className="border border-blue-500 text-blue-500 font-semibold py-3 px-6 rounded-lg hover:bg-primary hover:text-white transition">
 							About Us
 						</p>
 					</Link>

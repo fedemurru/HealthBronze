@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Head from "next/head";
 import Image from "next/image";
 
@@ -78,21 +79,108 @@ export default function About() {
 						</div>
 					</div>
 				</section>
-
 				<section className="mt-8">
 					<h2 className="text-2xl font-semibold text-blue-500">Our Values</h2>
-					<ul className="mt-4 list-disc list-inside">
-						<li className="mt-2">
-							Innovation: Continuously evolving our solutions to meet the needs
-							of the healthcare industry.
+					<p className="mt-4 text-lg">
+						At Health Software Solution, our core values guide everything we do.
+						These principles drive our mission to innovate, deliver exceptional
+						service, and maintain the highest standards in the healthcare
+						industry.
+					</p>
+					<ul className="mt-4 list-disc list-inside space-y-4">
+						<li className="flex items-start space-x-3">
+							<svg
+								className="w-24 h-24 text-blue-500"
+								fill="none"
+								stroke="currentColor"
+								viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									strokeLinecap="round"
+									strokeLinejoin="round"
+									strokeWidth="2"
+									d="M17 9l3 3-3 3m-6 0l-3-3 3-3M3 12h18"
+								></path>
+							</svg>
+							<div>
+								<h3 className="text-xl font-semibold text-blue-600">
+									Innovation
+								</h3>
+								<p className="mt-1">
+									We are committed to pushing the boundaries of technology to
+									meet the evolving needs of the healthcare industry. By
+									leveraging cutting-edge solutions and continuous improvement,
+									we strive to stay ahead of industry trends and deliver
+									impactful results.
+								</p>
+								<p className="mt-1 text-gray-600 italic">
+									"Innovation distinguishes between a leader and a follower." -
+									Steve Jobs
+								</p>
+							</div>
 						</li>
-						<li className="mt-2">
-							Integrity: Upholding the highest standards of ethics and
-							professionalism.
+						<li className="flex items-start space-x-3">
+							<svg
+								className="w-24 h-24 text-blue-500"
+								fill="none"
+								stroke="currentColor"
+								viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									strokeLinecap="round"
+									strokeLinejoin="round"
+									strokeWidth="2"
+									d="M12 8v4.5l3.5 2.5m-3.5-4.5H9.5v-4H12zm-3.5 5v5h7v-5H8.5z"
+								></path>
+							</svg>
+							<div>
+								<h3 className="text-xl font-semibold text-blue-600">
+									Integrity
+								</h3>
+								<p className="mt-1">
+									We uphold the highest standards of ethics and professionalism.
+									Our commitment to integrity ensures that we conduct our
+									business transparently, honestly, and responsibly, always
+									prioritizing the best interests of our clients and
+									stakeholders.
+								</p>
+								<p className="mt-1 text-gray-600 italic">
+									"Integrity is doing the right thing, even when no one is
+									watching." - C.S. Lewis
+								</p>
+							</div>
 						</li>
-						<li className="mt-2">
-							Customer-Centricity: Focusing on delivering value and exceptional
-							service to our clients.
+						<li className="flex items-start space-x-3">
+							<svg
+								className="w-24 h-24 text-blue-500"
+								fill="none"
+								stroke="currentColor"
+								viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									strokeLinecap="round"
+									strokeLinejoin="round"
+									strokeWidth="2"
+									d="M13 16h-1v-4h1v4zm0 0h1v-4h-1v4zM7 16h1v-4H7v4zM7 16h1v-4H7v4zM19 5H5a2 2 0 00-2 2v10a2 2 0 002 2h14a2 2 0 002-2V7a2 2 0 00-2-2z"
+								></path>
+							</svg>
+							<div>
+								<h3 className="text-xl font-semibold text-blue-600">
+									Customer-Centricity
+								</h3>
+								<p className="mt-1">
+									Our clients are at the heart of everything we do. We focus on
+									understanding their unique needs and delivering solutions that
+									provide exceptional value and enhance their operational
+									efficiency. Your success is our success.
+								</p>
+								<p className="mt-1 text-gray-600 italic">
+									"The customer’s perception is our reality." - Kate Zabriskie
+								</p>
+							</div>
 						</li>
 					</ul>
 				</section>

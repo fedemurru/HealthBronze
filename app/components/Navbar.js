@@ -18,7 +18,7 @@ export default function Header() {
 	};
 
 	return (
-		<header className="bg-primary text-white">
+		<header className=" bg-blue-500 text-white">
 			<nav className="container mx-auto flex items-center justify-between relative">
 				<Link href="/" passHref>
 					<div className="flex items-center">
@@ -58,7 +58,7 @@ export default function Header() {
 					</svg>
 				</button>
 				<ul
-					className={`md:flex md:space-x-4 md:items-center absolute md:static bg-primary w-full md:w-auto transition-transform duration-300 ease-in-out ${
+					className={`md:flex md:space-x-4 md:items-center absolute md:static  bg-blue-500 w-full md:w-auto transition-transform duration-300 ease-in-out ${
 						isMenuOpen ? "top-16" : "top-[-500px]"
 					} right-0 md:right-auto`}
 				>
