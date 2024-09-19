@@ -59,7 +59,7 @@ export default async function ProjectDetail({ params }) {
 						/>
 					</div>
 					<div className="p-6">
-						<p className="text-gray-700 mb-6">{project.description}</p>
+						<p className="text-gray-700 mb-6">{project.text}</p>
 						<Link href="/services">
 							<p className="text-primary font-semibold hover:underline">
 								Back to Our Services
